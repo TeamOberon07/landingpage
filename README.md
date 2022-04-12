@@ -3,6 +3,7 @@
 Eseguire:
 - npm install
 - npm run start
+
 Ora, aprire un altro terminale ed eseguire il comando:
 - npx json-server --watch ./src/e-comm_db.json --port 8000
 
