@@ -26,7 +26,7 @@ export function ECommerce() {
         e.preventDefault();
         setOrderLink('');
 
-        const order = {id, price, sellerAddress};
+        const order = {id, price, sellerAddress, confirmed: false, hash: ''};
 
         if (price === '') {
             setStatus('Please enter a valid price');

@@ -3,17 +3,23 @@
     {
       "id": 1,
       "price": "0.001",
-      "sellerAddress": "0x25EfE244b43036aF8915Aa9806a478f9405D31db"
+      "sellerAddress": "0x25EfE244b43036aF8915Aa9806a478f9405D31db",
+      "confirmed": false,
+      "hash": ""
     },
     {
       "id": 2,
-      "price": "0.003",
-      "sellerAddress": "0x7FA3E0bbff7082cf4f2fcCB2CfcC92f2e5602999"
+      "price": 0.003,
+      "sellerAddress": "0x7FA3E0bbff7082cf4f2fcCB2CfcC92f2e5602999",
+      "confirmed": false,
+      "hash": ""
     },
     {
       "id": 3,
       "price": "0.007",
-      "sellerAddress": "0xDE4706886D1c283a9765F8314125a439DE78dF24"
+      "sellerAddress": "0xDE4706886D1c283a9765F8314125a439DE78dF24",
+      "confirmed": false,
+      "hash": ""
     }
   ]
 }
