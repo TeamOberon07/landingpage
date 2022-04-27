@@ -77,7 +77,7 @@ export function ECommerce() {
             </form>
 
             <p>{ status }</p>
-            {orderLink && <a href={orderLink} target='_blank'>Complete Payment</a>}
+            {orderLink && <a href={orderLink} target='_blank' rel='noreferrer'>Complete Payment</a>}
             
         </div>
     );
