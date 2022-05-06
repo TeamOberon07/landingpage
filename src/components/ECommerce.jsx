@@ -43,9 +43,9 @@ export function ECommerce() {
                 }
                 else {
                     setStatus('Request processed correctly, please complete the payment on ShopChain');
-                    setOrderLink('http://localhost:3000/landingpage?order='+id);
+                    setOrderLink('http://localhost:3000/landing-page?order='+id);
 
-                    window.open('http://localhost:3000/landingpage?order='+id);
+                    window.open('http://localhost:3000/landing-page?order='+id);
                     setPrice('');
                     setSellerAddress('0x25EfE244b43036aF8915Aa9806a478f9405D31db');
                     setId(id+1);
