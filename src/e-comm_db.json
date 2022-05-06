@@ -41,6 +41,20 @@
       "sellerAddress": "0x25EfE244b43036aF8915Aa9806a478f9405D31db",
       "confirmed": true,
       "hash": "0x8b8d8c8021d6c89c6148ad2c4570029071b08112f3808d08c175ace3566c5461"
+    },
+    {
+      "id": 7,
+      "price": "3",
+      "sellerAddress": "0xc6d8fEFc59868633e04b8DE3D7c69CbE92c2ac2E",
+      "confirmed": false,
+      "hash": ""
+    },
+    {
+      "id": 8,
+      "price": "5",
+      "sellerAddress": "0x25EfE244b43036aF8915Aa9806a478f9405D31db",
+      "confirmed": true,
+      "hash": "0xdc2939a60b2cc3a2a0c1f80f682fb5c8cb16c97d145f205a75c294ca59e03525"
     }
   ]
 }
