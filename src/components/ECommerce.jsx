@@ -4,6 +4,7 @@ export function ECommerce() {
     const [id, setId] = useState('');
     const [price, setPrice] = useState('');
     const [sellerAddress, setSellerAddress] = useState('0x25EfE244b43036aF8915Aa9806a478f9405D31db');
+    const [buyerAddress, setBuyerAddress] = useState('');
     const [status, setStatus] = useState('');
     const [orderLink, setOrderLink] = useState('');
     const [isLoading, setIsLoading] = useState(true);
@@ -26,10 +27,14 @@ export function ECommerce() {
         e.preventDefault();
         setOrderLink('');
 
-        const order = {id, price, sellerAddress, confirmed: false, hash: ''};
+        const order = {id, price, sellerAddress, buyerAddress, confirmed: false, hash: ''};
 
         if (price === '') {
             setStatus('Please enter a valid price');
+        }
+        else
+        if (buyerAddress === "") {
+            setStatus("Please enter your address");
         }
         else {
             fetch('http://localhost:8000/orders', {
@@ -48,6 +53,7 @@ export function ECommerce() {
                     window.open('http://localhost:3000/landing-page?order='+id);
                     setPrice('');
                     setSellerAddress('0x25EfE244b43036aF8915Aa9806a478f9405D31db');
+                    setBuyerAddress("");
                     setId(id+1);
                 }
             });
@@ -72,6 +78,9 @@ export function ECommerce() {
                     <option value='0xDE4706886D1c283a9765F8314125a439DE78dF24'>S7: 0xDE4706886D1c283a9765F8314125a439DE78dF24</option>
                     <option value='0xe5B197D91ad002a18917aB4fdc6b6E0126797482'>S8: 0xe5B197D91ad002a18917aB4fdc6b6E0126797482</option>
                 </select>
+
+                <label htmlFor='price'>Your Address (Buyer)</label>
+                <input type='text' name='buyerAddress' id='buyerAddress' value={buyerAddress} onChange={ (e) => setBuyerAddress(e.target.value) } />
 
                 <input id='submitBtn' type='submit' />
             </form>
