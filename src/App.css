@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+#buyerAddress {
+  width: 27em;
+}
