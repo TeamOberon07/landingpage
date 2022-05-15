@@ -64,10 +64,10 @@ export function ECommerce() {
         <div>
             <form onSubmit={handleSubmit}>
 
-                <label htmlFor='price'>Price</label>
+                <label htmlFor='price'>Price:</label>
                 <input type='text' name='price' id='price' value={price} onChange={ (e) => setPrice(e.target.value) } />
 
-                <label htmlFor='sellerAddress'>Seller Address</label>
+                <label htmlFor='sellerAddress'>Seller Address:</label>
                 <select name='sellerAddress' id='sellerAddress' value={sellerAddress} onChange={ (e) => setSellerAddress(e.target.value) } >
                     <option value='0x25EfE244b43036aF8915Aa9806a478f9405D31db'>S1: 0x25EfE244b43036aF8915Aa9806a478f9405D31db</option>
                     <option value='0xc6d8fEFc59868633e04b8DE3D7c69CbE92c2ac2E'>S2: 0xc6d8fEFc59868633e04b8DE3D7c69CbE92c2ac2E</option>
@@ -79,7 +79,7 @@ export function ECommerce() {
                     <option value='0xe5B197D91ad002a18917aB4fdc6b6E0126797482'>S8: 0xe5B197D91ad002a18917aB4fdc6b6E0126797482</option>
                 </select>
 
-                <label htmlFor='price'>Your Address (Buyer)</label>
+                <label htmlFor='price'>Your Address (Buyer):</label>
                 <input type='text' name='buyerAddress' id='buyerAddress' value={buyerAddress} onChange={ (e) => setBuyerAddress(e.target.value) } />
 
                 <input id='submitBtn' type='submit' />
