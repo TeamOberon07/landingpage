@@ -45,8 +45,8 @@
       "price": "0.49",
       "sellerAddress": "0x25EfE244b43036aF8915Aa9806a478f9405D31db",
       "buyerAddress": "0xB5Fe0836f9Bd5ba48654726A81f8612fdD98B138",
-      "confirmed": false,
-      "hash": ""
+      "confirmed": true,
+      "hash": "0xa294f851f87cdb79f88c9451bfa46f61a50a9c12becc44104e47b500f2ddb1aa"
     },
     {
       "id": 7,
@@ -63,6 +63,14 @@
       "buyerAddress": "0x75CA58952B89947cA43f23F01c6959b988017d43",
       "confirmed": false,
       "hash": ""
+    },
+    {
+      "id": 9,
+      "price": "0.49",
+      "sellerAddress": "0x25EfE244b43036aF8915Aa9806a478f9405D31db",
+      "buyerAddress": "0xB5Fe0836f9Bd5ba48654726A81f8612fdD98B138",
+      "confirmed": true,
+      "hash": "0x0a41c5c87ef32922c3df103c21bae7d0863d6b205c4f47c43a5b8e307fc1d207"
     }
   ]
 }

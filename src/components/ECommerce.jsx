@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 export function ECommerce() {
     const [id, setId] = useState('');
     const [price, setPrice] = useState('');
-    const [sellerAddress, setSellerAddress] = useState('0x25EfE244b43036aF8915Aa9806a478f9405D31db');
+    const [sellerAddress, setSellerAddress] = useState('0xc6d8fEFc59868633e04b8DE3D7c69CbE92c2ac2E');
     const [buyerAddress, setBuyerAddress] = useState('');
     const [status, setStatus] = useState('');
     const [orderLink, setOrderLink] = useState('');
@@ -52,7 +52,7 @@ export function ECommerce() {
 
                     window.open('http://localhost:3000/landing-page?order='+id);
                     setPrice('');
-                    setSellerAddress('0x25EfE244b43036aF8915Aa9806a478f9405D31db');
+                    setSellerAddress('0xc6d8fEFc59868633e04b8DE3D7c69CbE92c2ac2E');
                     setBuyerAddress("");
                     setId(id+1);
                 }
@@ -69,14 +69,10 @@ export function ECommerce() {
 
                 <label htmlFor='sellerAddress'>Seller Address:</label>
                 <select name='sellerAddress' id='sellerAddress' value={sellerAddress} onChange={ (e) => setSellerAddress(e.target.value) } >
-                    <option value='0x25EfE244b43036aF8915Aa9806a478f9405D31db'>S1: 0x25EfE244b43036aF8915Aa9806a478f9405D31db</option>
-                    <option value='0xc6d8fEFc59868633e04b8DE3D7c69CbE92c2ac2E'>S2: 0xc6d8fEFc59868633e04b8DE3D7c69CbE92c2ac2E</option>
+                    <option value='0xc6d8fEFc59868633e04b8DE3D7c69CbE92c2ac2E'>S1: 0xc6d8fEFc59868633e04b8DE3D7c69CbE92c2ac2E</option>
+                    <option value='0x25EfE244b43036aF8915Aa9806a478f9405D31db'>S2: 0x25EfE244b43036aF8915Aa9806a478f9405D31db</option>
                     <option value='0x7FA3E0bbff7082cf4f2fcCB2CfcC92f2e5602999'>S3: 0x7FA3E0bbff7082cf4f2fcCB2CfcC92f2e5602999</option>
                     <option value='0x26d44a260c6dde286a72Bc43E384a087731cecef'>S4: 0x26d44a260c6dde286a72Bc43E384a087731cecef</option>
-                    <option value='0x9034C7BfE4f6E4a30cbbcbC193EE1f98BF80421e'>S5: 0x9034C7BfE4f6E4a30cbbcbC193EE1f98BF80421e</option>
-                    <option value='0xD7C4ca22b142fE95a33856bC37ED5E514C6b7279'>S6: 0xD7C4ca22b142fE95a33856bC37ED5E514C6b7279</option>
-                    <option value='0xDE4706886D1c283a9765F8314125a439DE78dF24'>S7: 0xDE4706886D1c283a9765F8314125a439DE78dF24</option>
-                    <option value='0xe5B197D91ad002a18917aB4fdc6b6E0126797482'>S8: 0xe5B197D91ad002a18917aB4fdc6b6E0126797482</option>
                 </select>
 
                 <label htmlFor='price'>Your Address (Buyer):</label>
